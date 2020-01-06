@@ -21,6 +21,8 @@
   <!-- Custom styles for this template -->
   <link href="css/grayscale.min.css" rel="stylesheet">
 
+  <link href="css/countdown.css" rel="stylesheet">
+
 </head>
 
 <body id="page-top">
@@ -39,10 +41,16 @@
             <a class="nav-link js-scroll-trigger" href="#about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+            <a class="nav-link js-scroll-trigger" href="#projects">Speakers</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#signup">Contact</a>
+            <a class="nav-link js-scroll-trigger" href="#signup">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="html/registration.html">Registration</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#signup">Venue</a>
           </li>
         </ul>
       </div>
@@ -53,9 +61,9 @@
   <header class="masthead">
     <div class="container d-flex h-100 align-items-center">
       <div class="mx-auto text-center">
-        <h1 class="mx-auto my-0 text-uppercase">Grayscale</h1>
-        <h2 class="text-white-50 mx-auto mt-2 mb-5">A free, responsive, one page Bootstrap theme created by Start Bootstrap.</h2>
-        <a href="#about" class="btn btn-primary js-scroll-trigger">Get Started</a>
+        <h1 class="mx-auto my-0 text-uppercase">BSides Kochi</h1>
+        <h2 class="text-white-50 mx-auto mt-2 mb-5">   </h2>
+        <a href="countdown.html" class="btn btn-primary js-scroll-trigger">Register</a>
       </div>
     </div>
   </header>
@@ -65,9 +73,16 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
+
+          <div class="rounded bg-gradient-3 text-white shadow p-5 text-center mb-5">
+            <p class="mb-0 font-weight-bold text-uppercase">We'll open in</p>
+            <div id="clock" class="countdown pt-4"></div>
+        </div>
+          <!-- 
           <h2 class="text-white mb-4">Built with Bootstrap 4</h2>
           <p class="text-white-50">Grayscale is a free Bootstrap theme created by Start Bootstrap. It can be yours right now, simply download the template on
             <a href="http://startbootstrap.com/template-overviews/grayscale/">the preview page</a>. The theme is open source, and you can use it for any purpose, personal or commercial.</p>
+           -->
         </div>
       </div>
       <img src="img/ipad.png" class="img-fluid" alt="">
@@ -222,6 +237,9 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/grayscale.min.js"></script>
+
+  <script src="js/jquery.countdown.min.js"></script>
+  <script src="js/countdown.min.js"></script>
 
 </body>
 
