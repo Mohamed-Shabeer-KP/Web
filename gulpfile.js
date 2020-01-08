@@ -133,3 +133,19 @@ exports.vendor = vendor;
 exports.build = build;
 exports.watch = watch;
 exports.default = build;
+
+var gulp_php = require('gulp'),
+    connect = require('gulp-connect-php'),
+    browserSync = require('browser-sync');
+
+    gulp_php.task('dev', function() {
+  connect.server({}, function (){
+   browserSync({
+     proxy: '127.0.0.1:8000'
+       });
+    });
+
+    gulp_php.watch('**/*.php').on('change', function () {
+      browserSync.reload();
+    });
+});
