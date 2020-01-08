@@ -14,8 +14,10 @@ function validate(){
     if(valPassword() && valEmail())
     status = true;
 
-    if(status != true)
+    if(status != true){
+        customAlert("All fields are required !");
         return false;
+    }
     else
         return true;
 }

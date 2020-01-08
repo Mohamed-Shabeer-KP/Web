@@ -67,13 +67,19 @@ body {
 .bg-gradient-3 {
     background: #ff416c;
     background: -webkit-linear-gradient(to right, #ff416c, #ff4b2b);
-    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    background: linear-gradient(to right, #00eeffb9,#0caaf3);
 }
 
 .bg-gradient-4 {
     background: #007991;
     background: -webkit-linear-gradient(to right, #007991, #78ffd6);
     background: linear-gradient(to right, #007991, #78ffd6);
+}
+
+.bg-gradient-5 {
+    background: #ff416c;
+    background: -webkit-linear-gradient(to right, #ff416c, #ff4b2b);
+    background: linear-gradient(to right, #ff416c,#ff4b2b);
 }
 
 .rounded {
@@ -92,4 +98,10 @@ body {
 .btn-demo:hover, .btn-demo:focus {
     color: #fff;
     background: rgba(255, 255, 255, 0.5);
+}
+
+.list-ico {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
 }

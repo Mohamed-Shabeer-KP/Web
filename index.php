@@ -19,10 +19,21 @@
   <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
   <!-- Custom styles for this template -->
-  <link href="css/grayscale.min.css" rel="stylesheet">
+  <link href="css/grayscale.css" rel="stylesheet">
 
   <link href="css/countdown.css" rel="stylesheet">
+  <link href="css/gmap.css" rel="stylesheet">
+  <link href="css/speakers.css" rel="stylesheet">
 
+
+  <link href="https://fonts.googleapis.com/css?family=Gelasio&display=swap" rel="stylesheet">
+  <link href="vendor/ionicons/css/ionicons.min.css" rel="stylesheet">
+
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 </head>
 
 <body id="page-top">
@@ -38,19 +49,19 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="php/registrationPage.php">Registration</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#about">About</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#projects">Speakers</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#signup">Contact Us</a>
+            <a class="nav-link js-scroll-trigger" href="#venue">Venue</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="php/registrationPage.php">Registration</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#signup">Venue</a>
+            <a class="nav-link js-scroll-trigger" href="#contact">Contact Us</a>
           </li>
         </ul>
       </div>
@@ -61,9 +72,11 @@
   <header class="masthead">
     <div class="container d-flex h-100 align-items-center">
       <div class="mx-auto text-center">
-        <h1 class="mx-auto my-0 text-uppercase">BSides Kochi</h1>
-        <h2 class="text-white-50 mx-auto mt-2 mb-5">   </h2>
-        <a href="test.php" class="btn btn-primary js-scroll-trigger">Registeasdr</a>
+        <h1>BSides Kochi</h1>
+        <h2 class="text-white-50 mx-auto mt-2 mb-5">
+
+        </h2>
+        <a href="php/registrationPage.php" class="btn btn-success js-scroll-trigger">Registration</a>
       </div>
     </div>
   </header>
@@ -73,21 +86,23 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
-
           <div class="rounded bg-gradient-3 text-white shadow p-5 text-center mb-5">
             <p class="mb-0 font-weight-bold text-uppercase">We'll open in</p>
             <div id="clock" class="countdown pt-4"></div>
-        </div>
-          <!-- 
-          <h2 class="text-white mb-4">Built with Bootstrap 4</h2>
-          <p class="text-white-50">Grayscale is a free Bootstrap theme created by Start Bootstrap. It can be yours right now, simply download the template on
-            <a href="http://startbootstrap.com/template-overviews/grayscale/">the preview page</a>. The theme is open source, and you can use it for any purpose, personal or commercial.</p>
-           -->
+          </div>
+          <br>
+          <h2 class="text-white mb-4">About</h2>
+          <p class="text-white">Security BSides is a community driven framework for
+            building events by and for information security community members.
+            These events are already happening in major cities all over the world! We are
+            responsible for organizing an independent BSides approved event for Delhi, India. </p>
+
         </div>
       </div>
       <img src="img/ipad.png" class="img-fluid" alt="">
     </div>
   </section>
+
 
   <!-- Projects Section -->
   <section id="projects" class="projects-section bg-light">
@@ -109,7 +124,25 @@
       <!-- Project One Row -->
       <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
         <div class="col-lg-6">
-          <img class="img-fluid" src="img/demo-image-01.jpg" alt="">
+          <div id="team">
+            <div class="col-lg-6 col-md-6 wow fadeInUp mx-auto text-center" style="visibility: visible; animation-name: fadeInUp;">
+              <div class="member">
+                <img src="img/team-1.jpg" class="img-fluid" alt="">
+                <div class="member-info">
+                  <div class="member-info-content">
+                    <h4>Walter White</h4>
+                    <span>Chief Executive Officer</span>
+                    <div class="social">
+                      <a href=""><i class="fa fa-twitter"></i></a>
+                      <a href=""><i class="fa fa-facebook"></i></a>
+                      <a href=""><i class="fa fa-google-plus"></i></a>
+                      <a href=""><i class="fa fa-linkedin"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="col-lg-6">
           <div class="bg-black text-center h-100 project">
@@ -145,27 +178,42 @@
     </div>
   </section>
 
-  <!-- Signup Section -->
-  <section id="signup" class="signup-section">
+  <!-- Venue Section -->
+  <section id="venue">
     <div class="container">
-      <div class="row">
-        <div class="col-md-10 col-lg-8 mx-auto text-center">
+      <div class="map-example">
+        <div class="row">
+          <div class="col-lg-6 text-center">
 
-          <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
-          <h2 class="text-white mb-5">Subscribe to receive updates!</h2>
+            <div id="map">
+              <iframe width="100%" height="520" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;coord=10.0464173,76.2950208&amp;q=Amrita%20School%20of%20Arts%20and%20Sciences%20%2C%20Kochi+(BSides%20Venue)&amp;ie=UTF8&amp;t=&amp;z=17&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+              </iframe>
+            </div>
+          </div>
+          <div class="col-lg-6  bg-blue text-white shadow p-5 ">
+            <div class="heading text-center bg">
+              <h2>Venue</h2>
+            </div>
+            <div class="info text-white">
 
-          <form class="form-inline d-flex">
-            <input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="Enter email address...">
-            <button type="submit" class="btn btn-primary mx-auto">Subscribe</button>
-          </form>
-
+              <div class="more-info">
+                <ul class="list-ico">
+                  <li><span class="ion-ios-location"></span> AMRITA SCHOOL OF ARTS AND SCIENCES
+                    Brahmasthanam, Edappally North P.O.
+                    Kochi - 682 024, KERALA</li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+
+
   </section>
 
   <!-- Contact Section -->
-  <section class="contact-section bg-black">
+  <section id="contact" class="contact-section bg-black">
     <div class="container">
 
       <div class="row">
@@ -174,9 +222,9 @@
           <div class="card py-4 h-100">
             <div class="card-body text-center">
               <i class="fas fa-map-marked-alt text-primary mb-2"></i>
-              <h4 class="text-uppercase m-0">Address</h4>
+              <h4 class="text-uppercase m-0">City</h4>
               <hr class="my-4">
-              <div class="small text-black-50">4923 Market Street, Orlando FL</div>
+              <div class="small text-black-50">Kochi</div>
             </div>
           </div>
         </div>
@@ -211,10 +259,10 @@
           <i class="fab fa-twitter"></i>
         </a>
         <a href="#" class="mx-2">
-          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-instagram"></i>
         </a>
         <a href="#" class="mx-2">
-          <i class="fab fa-github"></i>
+          <i class="fab fa-telegram"></i>
         </a>
       </div>
 
@@ -239,7 +287,8 @@
   <script src="js/grayscale.min.js"></script>
 
   <script src="js/jquery.countdown.min.js"></script>
-  <script src="js/countdown.min.js"></script>
+  <script src="js/countdown.js"></script>
+  <script src="js/speakers.js"></script>
 
 </body>
 
