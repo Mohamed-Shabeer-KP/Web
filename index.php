@@ -47,7 +47,7 @@
             <a class="nav-link js-scroll-trigger" href="#signup">Contact Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="html/registration.html">Registration</a>
+            <a class="nav-link js-scroll-trigger" href="php/registrationPage.php">Registration</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#signup">Venue</a>
@@ -63,7 +63,7 @@
       <div class="mx-auto text-center">
         <h1 class="mx-auto my-0 text-uppercase">BSides Kochi</h1>
         <h2 class="text-white-50 mx-auto mt-2 mb-5">   </h2>
-        <a href="countdown.html" class="btn btn-primary js-scroll-trigger">Register</a>
+        <a href="test.php" class="btn btn-primary js-scroll-trigger">Registeasdr</a>
       </div>
     </div>
   </header>
