@@ -71,12 +71,12 @@
   <!-- Header -->
   <header class="masthead">
     <div class="container d-flex h-100 align-items-center">
-      <div class="mx-auto text-center">
+      <div class="mx-auto text-center fadeInDown animated">
         <h1>BSides Kochi</h1>
         <h2 class="text-white-50 mx-auto mt-2 mb-5">
 
         </h2>
-        <a href="php/registrationPage.php" class="btn btn-success js-scroll-trigger">Registration</a>
+        <a href="php/registrationPage.php" class="btn btn-success js-scroll-trigger tada animated">Registration</a>
       </div>
     </div>
   </header>
